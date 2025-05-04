@@ -1,0 +1,1523 @@
+{
+	"info": {
+		"_postman_id": "55b5d55f-6247-4b04-9a99-95e4dadc9949",
+		"name": "parkme",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17849869",
+		"_collection_link": "https://codex-api-testing.postman.co/workspace/Project~2f154a0f-22bf-484b-b84b-bebacc92e619/collection/17849869-55b5d55f-6247-4b04-9a99-95e4dadc9949?action=share&source=collection_link&creator=17849869"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Leo Felcianas\",\r\n    \"email\": \"dfanso+2@pm.me\",\r\n    \"password\": \"123@DFanso\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"dfanso+1@pm.me\",\r\n    \"password\": \"123@Dfanso\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Profile",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc3OGVmZjM4ZDZkNTdjZGQ1ODA3NWZmIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzM2MDcxNTg5LCJuYmYiOjE3MzU5ODUxODksImlhdCI6MTczNTk4NTE4OX0.NbYicnUfFGApGQA8brR-jZ5MKfaSC0NN0SlK5-6GUwWadplI56Vac8S3Bbg1lkuUOM-DeBdCtsAyblWhvEN6Gg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/auth/profile",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"auth",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Profile",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc3OGVmZjM4ZDZkNTdjZGQ1ODA3NWZmIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzM2MDcxNTg5LCJuYmYiOjE3MzU5ODUxODksImlhdCI6MTczNTk4NTE4OX0.NbYicnUfFGApGQA8brR-jZ5MKfaSC0NN0SlK5-6GUwWadplI56Vac8S3Bbg1lkuUOM-DeBdCtsAyblWhvEN6Gg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/auth/profile",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"auth",
+								"profile"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Profile Copy",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc3OGVmZjM4ZDZkNTdjZGQ1ODA3NWZmIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzM3ODczNTQ3LCJuYmYiOjE3Mzc3ODcxNDcsImlhdCI6MTczNzc4NzE0N30.zNWICsAn44SU-ClSqzCLb_pCztxv1nE9HFIicIhCeeaznCR3wsBb07prwPjZ_4jE1zyYpIxWlr0LFjTH7Vqkcg",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "Leo Felcianas",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/leoga/Downloads/71537398.jpg"
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/auth/profile",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"auth",
+										"profile"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 25 Jan 2025 08:15:16 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "416"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Profile updated successfully\",\n    \"data\": {\n        \"id\": \"6778eff38d6d57cdd58075ff\",\n        \"name\": \"Leo Felcianas\",\n        \"email\": \"dfanso+1@pm.me\",\n        \"role\": \"admin\",\n        \"status\": \"active\",\n        \"profile_image_url\": \"https://parkme-assets-bucket-v1.s3.ap-south-1.amazonaws.com/profile-images/71537398-f5ae5da7-3ae5-42ee-9d83-8e9945947f6b.jpg\",\n        \"created_at\": \"2025-01-04T08:23:15.287Z\",\n        \"updated_at\": \"2025-01-25T13:45:16.0881604+05:30\"\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "User Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Leo Gavin\",\r\n    \"email\": \"dfanso+1@pm.me\",\r\n    \"password\": \"12345678\",\r\n    \"role\": \"admin\",\r\n    \"status\": \"active\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Leo Gavin\",\r\n  \"email\": \"dfanso+2@pm.me\",\r\n  \"password\": \"123@Dfanso\",\r\n  \"role\": \"admin\",\r\n  \"status\": \"testing\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/users/6778c54e9809cb61c642d022",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"6778c54e9809cb61c642d022"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Get All",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc3OGVmZjM4ZDZkNTdjZGQ1ODA3NWZmIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzM2MDcxNTg5LCJuYmYiOjE3MzU5ODUxODksImlhdCI6MTczNTk4NTE4OX0.NbYicnUfFGApGQA8brR-jZ5MKfaSC0NN0SlK5-6GUwWadplI56Vac8S3Bbg1lkuUOM-DeBdCtsAyblWhvEN6Gg",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "Bearer eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc3OGVmZjM4ZDZkNTdjZGQ1ODA3NWZmIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzM2MDcxNTg5LCJuYmYiOjE3MzU5ODUxODksImlhdCI6MTczNTk4NTE4OX0.NbYicnUfFGApGQA8brR-jZ5MKfaSC0NN0SlK5-6GUwWadplI56Vac8S3Bbg1lkuUOM-DeBdCtsAyblWhvEN6Gg",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Get One",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/users/6778c54e9809cb61c642d022",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"6778c54e9809cb61c642d022"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "vehicle",
+			"item": [
+				{
+					"name": "vehicle create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc3OGVmZjM4ZDZkNTdjZGQ1ODA3NWZmIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzM2MzEzOTMyLCJuYmYiOjE3MzYyMjc1MzIsImlhdCI6MTczNjIyNzUzMn0.VhrPbvl6NeFA_yShwreqk_PG9USYko0-deJA1qbGerHHk-NQA_L8m4NGdj4rqdAneRPeiOzrBSOfWmSDzmvR1Q",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"plate_number\": \"ABC123\",\r\n  \"brand\": \"Toyota\",\r\n  \"model\": \"Camry\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/vehicles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vehicles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Vehicles",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{jwt_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/vehicles",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"vehicles"
+							]
+						},
+						"description": "Retrieve all vehicles in the system"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Vehicle by ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{jwt_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/vehicles/{{vehicle_id}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"vehicles",
+								"{{vehicle_id}}"
+							]
+						},
+						"description": "Retrieve a specific vehicle by its ID"
+					},
+					"response": []
+				},
+				{
+					"name": "Get User's Vehicles",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{jwt_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/vehicles/user/{{user_id}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"vehicles",
+								"user",
+								"{{user_id}}"
+							]
+						},
+						"description": "Retrieve all vehicles owned by a specific user"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Vehicle",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{jwt_token}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"plate_number\": \"XYZ789\",\n    \"brand\": \"Honda\",\n    \"model\": \"Civic\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/api/vehicles/{{vehicle_id}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"vehicles",
+								"{{vehicle_id}}"
+							]
+						},
+						"description": "Update an existing vehicle"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Vehicle",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{jwt_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/vehicles/{{vehicle_id}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"vehicles",
+								"{{vehicle_id}}"
+							]
+						},
+						"description": "Delete a specific vehicle"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Wallet",
+			"item": [
+				{
+					"name": "Top Up Wallet",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"amount\": 100.00\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/api/wallet/topup",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"wallet",
+								"topup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Balance",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/wallet/balance",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"wallet",
+								"balance"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Transactions",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/wallet/transactions",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"wallet",
+								"transactions"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Bookings",
+			"item": [
+				{
+					"name": "Create Pre-Booked Booking",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"vehicleId\": \"677cbb9817a0737c5329f968\",\n    \"startTime\": \"2025-02-27T10:00:00Z\",\n    \"locationId\":\"678bd59982059b655da1098e\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/api/bookings",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"bookings"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create Pre-Booked Booking",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{token}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"vehicleId\": \"677cbb9817a0737c5329f968\",\n    \"startTime\": \"2025-02-27T10:00:00Z\",\n    \"locationId\":\"678bd59982059b655da1098e\"\n}"
+								},
+								"url": {
+									"raw": "{{base_url}}/api/bookings",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"bookings"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 25 Jan 2025 06:56:06 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "406"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Booking created successfully\",\n    \"data\": {\n        \"id\": \"000000000000000000000000\",\n        \"vehicleId\": \"677cbb9817a0737c5329f968\",\n        \"userId\": \"6778eff38d6d57cdd58075ff\",\n        \"locationId\": \"678bd59982059b655da1098e\",\n        \"startTime\": \"2025-02-27T10:00:00Z\",\n        \"status\": \"pending\",\n        \"spotNumber\": \"A1\",\n        \"bookingType\": \"on_site\",\n        \"createdAt\": \"2025-01-25T12:26:06.7872716+05:30\",\n        \"updatedAt\": \"2025-01-25T12:26:06.7872716+05:30\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Booking by ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/bookings/{{booking_id}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"bookings",
+								"{{booking_id}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Booking for User",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/bookings/user",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"bookings",
+								"user"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Booking for User",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/api/bookings/user",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"bookings",
+										"user"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 31 Jan 2025 17:59:34 GMT"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"User bookings retrieved successfully\",\n    \"data\": [\n        {\n            \"id\": \"678b4b6783c9ee320c5fc67c\",\n            \"vehicleId\": \"67894aa000fe3ecbc1416046\",\n            \"userId\": \"6778eff38d6d57cdd58075ff\",\n            \"locationId\": \"000000000000000000000000\",\n            \"startTime\": \"2025-01-18T06:34:15.459Z\",\n            \"status\": \"pending\",\n            \"bookingType\": \"on_site\",\n            \"createdAt\": \"2025-01-18T06:34:15.519Z\",\n            \"updatedAt\": \"2025-01-18T06:34:15.519Z\",\n            \"user\": {\n                \"id\": \"6778eff38d6d57cdd58075ff\",\n                \"name\": \"Leo Felcianas\",\n                \"email\": \"dfanso+1@pm.me\",\n                \"password\": \"$2a$10$Mretl982DzzGjTg0qIskLO5YNEKDRyboiickZ6M9bMO93BC.MZ3XW\",\n                \"role\": \"admin\",\n                \"status\": \"active\",\n                \"profile_image_url\": \"https://parkme-assets-bucket-v1.s3.ap-south-1.amazonaws.com/profile-images/my-notion-face-portrait-a1e535fa-43ec-4862-8f08-5fbf67407ec5.png\",\n                \"created_at\": \"2025-01-04T08:23:15.287Z\",\n                \"updated_at\": \"2025-01-25T08:20:32.812Z\"\n            },\n            \"vehicle\": {\n                \"id\": \"67894aa000fe3ecbc1416046\",\n                \"plate_number\": \"MNO2123\",\n                \"brand\": \"Toyota\",\n                \"model\": \"Camry\",\n                \"owner\": \"6778eff38d6d57cdd58075ff\"\n            }\n        },\n        {\n            \"id\": \"678b4bc355f9b914135dcf8e\",\n            \"vehicleId\": \"67894aa000fe3ecbc1416046\",\n            \"userId\": \"6778eff38d6d57cdd58075ff\",\n            \"locationId\": \"000000000000000000000000\",\n            \"startTime\": \"2025-01-18T06:35:47.172Z\",\n            \"status\": \"pending\",\n            \"bookingType\": \"on_site\",\n            \"createdAt\": \"2025-01-18T06:35:47.231Z\",\n            \"updatedAt\": \"2025-01-18T06:35:47.231Z\",\n            \"user\": {\n                \"id\": \"6778eff38d6d57cdd58075ff\",\n                \"name\": \"Leo Felcianas\",\n                \"email\": \"dfanso+1@pm.me\",\n                \"password\": \"$2a$10$Mretl982DzzGjTg0qIskLO5YNEKDRyboiickZ6M9bMO93BC.MZ3XW\",\n                \"role\": \"admin\",\n                \"status\": \"active\",\n                \"profile_image_url\": \"https://parkme-assets-bucket-v1.s3.ap-south-1.amazonaws.com/profile-images/my-notion-face-portrait-a1e535fa-43ec-4862-8f08-5fbf67407ec5.png\",\n                \"created_at\": \"2025-01-04T08:23:15.287Z\",\n                \"updated_at\": \"2025-01-25T08:20:32.812Z\"\n            },\n            \"vehicle\": {\n                \"id\": \"67894aa000fe3ecbc1416046\",\n                \"plate_number\": \"MNO2123\",\n                \"brand\": \"Toyota\",\n                \"model\": \"Camry\",\n                \"owner\": \"6778eff38d6d57cdd58075ff\"\n            }\n        },\n        {\n            \"id\": \"678bcc4a637f6a4b6fdcf0b0\",\n            \"vehicleId\": \"67894aa000fe3ecbc1416046\",\n            \"userId\": \"6778eff38d6d57cdd58075ff\",\n            \"locationId\": \"000000000000000000000000\",\n            \"startTime\": \"2025-01-18T15:44:10.004Z\",\n            \"status\": \"pending\",\n            \"bookingType\": \"on_site\",\n            \"createdAt\": \"2025-01-18T15:44:10.142Z\",\n            \"updatedAt\": \"2025-01-18T15:44:10.142Z\",\n            \"user\": {\n                \"id\": \"6778eff38d6d57cdd58075ff\",\n                \"name\": \"Leo Felcianas\",\n                \"email\": \"dfanso+1@pm.me\",\n                \"password\": \"$2a$10$Mretl982DzzGjTg0qIskLO5YNEKDRyboiickZ6M9bMO93BC.MZ3XW\",\n                \"role\": \"admin\",\n                \"status\": \"active\",\n                \"profile_image_url\": \"https://parkme-assets-bucket-v1.s3.ap-south-1.amazonaws.com/profile-images/my-notion-face-portrait-a1e535fa-43ec-4862-8f08-5fbf67407ec5.png\",\n                \"created_at\": \"2025-01-04T08:23:15.287Z\",\n                \"updated_at\": \"2025-01-25T08:20:32.812Z\"\n            },\n            \"vehicle\": {\n                \"id\": \"67894aa000fe3ecbc1416046\",\n                \"plate_number\": \"MNO2123\",\n                \"brand\": \"Toyota\",\n                \"model\": \"Camry\",\n                \"owner\": \"6778eff38d6d57cdd58075ff\"\n            }\n        },\n        {\n            \"id\": \"678bdc612118d33569e14ac0\",\n            \"vehicleId\": \"67894aa000fe3ecbc1416046\",\n            \"userId\": \"6778eff38d6d57cdd58075ff\",\n            \"locationId\": \"678bd59982059b655da1098e\",\n            \"startTime\": \"2025-01-18T16:52:49.562Z\",\n            \"status\": \"cancelled\",\n            \"spotNumber\": \"A1\",\n            \"bookingType\": \"on_site\",\n            \"createdAt\": \"2025-01-18T16:52:49.862Z\",\n            \"updatedAt\": \"2025-01-25T06:51:05.197Z\",\n            \"user\": {\n                \"id\": \"6778eff38d6d57cdd58075ff\",\n                \"name\": \"Leo Felcianas\",\n                \"email\": \"dfanso+1@pm.me\",\n                \"password\": \"$2a$10$Mretl982DzzGjTg0qIskLO5YNEKDRyboiickZ6M9bMO93BC.MZ3XW\",\n                \"role\": \"admin\",\n                \"status\": \"active\",\n                \"profile_image_url\": \"https://parkme-assets-bucket-v1.s3.ap-south-1.amazonaws.com/profile-images/my-notion-face-portrait-a1e535fa-43ec-4862-8f08-5fbf67407ec5.png\",\n                \"created_at\": \"2025-01-04T08:23:15.287Z\",\n                \"updated_at\": \"2025-01-25T08:20:32.812Z\"\n            },\n            \"vehicle\": {\n                \"id\": \"67894aa000fe3ecbc1416046\",\n                \"plate_number\": \"MNO2123\",\n                \"brand\": \"Toyota\",\n                \"model\": \"Camry\",\n                \"owner\": \"6778eff38d6d57cdd58075ff\"\n            }\n        },\n        {\n            \"id\": \"678bddb92118d33569e14ac1\",\n            \"vehicleId\": \"677cbb9817a0737c5329f968\",\n            \"userId\": \"6778eff38d6d57cdd58075ff\",\n            \"locationId\": \"678bd59982059b655da1098e\",\n            \"startTime\": \"2025-01-18T16:58:33.608Z\",\n            \"endTime\": \"2025-01-18T17:54:43.007Z\",\n            \"status\": \"completed\",\n            \"spotNumber\": \"A2\",\n            \"totalAmount\": 100,\n            \"bookingType\": \"on_site\",\n            \"createdAt\": \"2025-01-18T16:58:33.903Z\",\n            \"updatedAt\": \"2025-01-18T17:54:43.307Z\",\n            \"user\": {\n                \"id\": \"6778eff38d6d57cdd58075ff\",\n                \"name\": \"Leo Felcianas\",\n                \"email\": \"dfanso+1@pm.me\",\n                \"password\": \"$2a$10$Mretl982DzzGjTg0qIskLO5YNEKDRyboiickZ6M9bMO93BC.MZ3XW\",\n                \"role\": \"admin\",\n                \"status\": \"active\",\n                \"profile_image_url\": \"https://parkme-assets-bucket-v1.s3.ap-south-1.amazonaws.com/profile-images/my-notion-face-portrait-a1e535fa-43ec-4862-8f08-5fbf67407ec5.png\",\n                \"created_at\": \"2025-01-04T08:23:15.287Z\",\n                \"updated_at\": \"2025-01-25T08:20:32.812Z\"\n            },\n            \"vehicle\": {\n                \"id\": \"677cbb9817a0737c5329f968\",\n                \"plate_number\": \"PH3392\",\n                \"brand\": \"Honda\",\n                \"model\": \"Civic\",\n                \"owner\": \"6778eff38d6d57cdd58075ff\"\n            }\n        },\n        {\n            \"id\": \"678bea4ca3df065b202b4a5b\",\n            \"vehicleId\": \"677cbb9817a0737c5329f968\",\n            \"userId\": \"6778eff38d6d57cdd58075ff\",\n            \"locationId\": \"678bd59982059b655da1098e\",\n            \"startTime\": \"2025-01-18T17:52:11.962Z\",\n            \"endTime\": \"2025-01-18T17:54:51.166Z\",\n            \"status\": \"completed\",\n            \"spotNumber\": \"A1\",\n            \"totalAmount\": 100,\n            \"bookingType\": \"on_site\",\n            \"createdAt\": \"2025-01-18T17:52:12.263Z\",\n            \"updatedAt\": \"2025-01-18T17:54:51.459Z\",\n            \"user\": {\n                \"id\": \"6778eff38d6d57cdd58075ff\",\n                \"name\": \"Leo Felcianas\",\n                \"email\": \"dfanso+1@pm.me\",\n                \"password\": \"$2a$10$Mretl982DzzGjTg0qIskLO5YNEKDRyboiickZ6M9bMO93BC.MZ3XW\",\n                \"role\": \"admin\",\n                \"status\": \"active\",\n                \"profile_image_url\": \"https://parkme-assets-bucket-v1.s3.ap-south-1.amazonaws.com/profile-images/my-notion-face-portrait-a1e535fa-43ec-4862-8f08-5fbf67407ec5.png\",\n                \"created_at\": \"2025-01-04T08:23:15.287Z\",\n                \"updated_at\": \"2025-01-25T08:20:32.812Z\"\n            },\n            \"vehicle\": {\n                \"id\": \"677cbb9817a0737c5329f968\",\n                \"plate_number\": \"PH3392\",\n                \"brand\": \"Honda\",\n                \"model\": \"Civic\",\n                \"owner\": \"6778eff38d6d57cdd58075ff\"\n            }\n        },\n        {\n            \"id\": \"67948773804e4d5904e76996\",\n            \"vehicleId\": \"677cbb9817a0737c5329f968\",\n            \"userId\": \"6778eff38d6d57cdd58075ff\",\n            \"locationId\": \"678bd59982059b655da1098e\",\n            \"startTime\": \"2025-02-27T10:00:00Z\",\n            \"status\": \"pending\",\n            \"spotNumber\": \"A1\",\n            \"bookingType\": \"on_site\",\n            \"createdAt\": \"2025-01-25T06:40:51.929Z\",\n            \"updatedAt\": \"2025-01-25T06:40:51.929Z\",\n            \"user\": {\n                \"id\": \"6778eff38d6d57cdd58075ff\",\n                \"name\": \"Leo Felcianas\",\n                \"email\": \"dfanso+1@pm.me\",\n                \"password\": \"$2a$10$Mretl982DzzGjTg0qIskLO5YNEKDRyboiickZ6M9bMO93BC.MZ3XW\",\n                \"role\": \"admin\",\n                \"status\": \"active\",\n                \"profile_image_url\": \"https://parkme-assets-bucket-v1.s3.ap-south-1.amazonaws.com/profile-images/my-notion-face-portrait-a1e535fa-43ec-4862-8f08-5fbf67407ec5.png\",\n                \"created_at\": \"2025-01-04T08:23:15.287Z\",\n                \"updated_at\": \"2025-01-25T08:20:32.812Z\"\n            },\n            \"vehicle\": {\n                \"id\": \"677cbb9817a0737c5329f968\",\n                \"plate_number\": \"PH3392\",\n                \"brand\": \"Honda\",\n                \"model\": \"Civic\",\n                \"owner\": \"6778eff38d6d57cdd58075ff\"\n            }\n        },\n        {\n            \"id\": \"67948795804e4d5904e76997\",\n            \"vehicleId\": \"677cbb9817a0737c5329f968\",\n            \"userId\": \"6778eff38d6d57cdd58075ff\",\n            \"locationId\": \"678bd59982059b655da1098e\",\n            \"startTime\": \"2025-02-27T10:00:00Z\",\n            \"status\": \"pending\",\n            \"spotNumber\": \"A2\",\n            \"bookingType\": \"on_site\",\n            \"createdAt\": \"2025-01-25T06:41:25.499Z\",\n            \"updatedAt\": \"2025-01-25T06:41:25.499Z\",\n            \"user\": {\n                \"id\": \"6778eff38d6d57cdd58075ff\",\n                \"name\": \"Leo Felcianas\",\n                \"email\": \"dfanso+1@pm.me\",\n                \"password\": \"$2a$10$Mretl982DzzGjTg0qIskLO5YNEKDRyboiickZ6M9bMO93BC.MZ3XW\",\n                \"role\": \"admin\",\n                \"status\": \"active\",\n                \"profile_image_url\": \"https://parkme-assets-bucket-v1.s3.ap-south-1.amazonaws.com/profile-images/my-notion-face-portrait-a1e535fa-43ec-4862-8f08-5fbf67407ec5.png\",\n                \"created_at\": \"2025-01-04T08:23:15.287Z\",\n                \"updated_at\": \"2025-01-25T08:20:32.812Z\"\n            },\n            \"vehicle\": {\n                \"id\": \"677cbb9817a0737c5329f968\",\n                \"plate_number\": \"PH3392\",\n                \"brand\": \"Honda\",\n                \"model\": \"Civic\",\n                \"owner\": \"6778eff38d6d57cdd58075ff\"\n            }\n        },\n        {\n            \"id\": \"6794879d804e4d5904e76998\",\n            \"vehicleId\": \"677cbb9817a0737c5329f968\",\n            \"userId\": \"6778eff38d6d57cdd58075ff\",\n            \"locationId\": \"678bd59982059b655da1098e\",\n            \"startTime\": \"2025-02-27T10:00:00Z\",\n            \"status\": \"pending\",\n            \"spotNumber\": \"A3\",\n            \"bookingType\": \"on_site\",\n            \"createdAt\": \"2025-01-25T06:41:33.052Z\",\n            \"updatedAt\": \"2025-01-25T06:41:33.052Z\",\n            \"user\": {\n                \"id\": \"6778eff38d6d57cdd58075ff\",\n                \"name\": \"Leo Felcianas\",\n                \"email\": \"dfanso+1@pm.me\",\n                \"password\": \"$2a$10$Mretl982DzzGjTg0qIskLO5YNEKDRyboiickZ6M9bMO93BC.MZ3XW\",\n                \"role\": \"admin\",\n                \"status\": \"active\",\n                \"profile_image_url\": \"https://parkme-assets-bucket-v1.s3.ap-south-1.amazonaws.com/profile-images/my-notion-face-portrait-a1e535fa-43ec-4862-8f08-5fbf67407ec5.png\",\n                \"created_at\": \"2025-01-04T08:23:15.287Z\",\n                \"updated_at\": \"2025-01-25T08:20:32.812Z\"\n            },\n            \"vehicle\": {\n                \"id\": \"677cbb9817a0737c5329f968\",\n                \"plate_number\": \"PH3392\",\n                \"brand\": \"Honda\",\n                \"model\": \"Civic\",\n                \"owner\": \"6778eff38d6d57cdd58075ff\"\n            }\n        },\n        {\n            \"id\": \"679487ff804e4d5904e76999\",\n            \"vehicleId\": \"677cbb9817a0737c5329f968\",\n            \"userId\": \"6778eff38d6d57cdd58075ff\",\n            \"locationId\": \"678bd59982059b655da1098e\",\n            \"startTime\": \"2025-02-27T10:00:00Z\",\n            \"status\": \"pending\",\n            \"spotNumber\": \"A1\",\n            \"bookingType\": \"on_site\",\n            \"createdAt\": \"2025-01-25T06:43:11.147Z\",\n            \"updatedAt\": \"2025-01-25T06:43:11.147Z\",\n            \"user\": {\n                \"id\": \"6778eff38d6d57cdd58075ff\",\n                \"name\": \"Leo Felcianas\",\n                \"email\": \"dfanso+1@pm.me\",\n                \"password\": \"$2a$10$Mretl982DzzGjTg0qIskLO5YNEKDRyboiickZ6M9bMO93BC.MZ3XW\",\n                \"role\": \"admin\",\n                \"status\": \"active\",\n                \"profile_image_url\": \"https://parkme-assets-bucket-v1.s3.ap-south-1.amazonaws.com/profile-images/my-notion-face-portrait-a1e535fa-43ec-4862-8f08-5fbf67407ec5.png\",\n                \"created_at\": \"2025-01-04T08:23:15.287Z\",\n                \"updated_at\": \"2025-01-25T08:20:32.812Z\"\n            },\n            \"vehicle\": {\n                \"id\": \"677cbb9817a0737c5329f968\",\n                \"plate_number\": \"PH3392\",\n                \"brand\": \"Honda\",\n                \"model\": \"Civic\",\n                \"owner\": \"6778eff38d6d57cdd58075ff\"\n            }\n        },\n        {\n            \"id\": \"67948b06cae0700d3a39f432\",\n            \"vehicleId\": \"677cbb9817a0737c5329f968\",\n            \"userId\": \"6778eff38d6d57cdd58075ff\",\n            \"locationId\": \"678bd59982059b655da1098e\",\n            \"startTime\": \"2025-02-27T10:00:00Z\",\n            \"status\": \"pending\",\n            \"spotNumber\": \"A1\",\n            \"bookingType\": \"on_site\",\n            \"createdAt\": \"2025-01-25T06:56:06.787Z\",\n            \"updatedAt\": \"2025-01-25T06:56:06.787Z\",\n            \"user\": {\n                \"id\": \"6778eff38d6d57cdd58075ff\",\n                \"name\": \"Leo Felcianas\",\n                \"email\": \"dfanso+1@pm.me\",\n                \"password\": \"$2a$10$Mretl982DzzGjTg0qIskLO5YNEKDRyboiickZ6M9bMO93BC.MZ3XW\",\n                \"role\": \"admin\",\n                \"status\": \"active\",\n                \"profile_image_url\": \"https://parkme-assets-bucket-v1.s3.ap-south-1.amazonaws.com/profile-images/my-notion-face-portrait-a1e535fa-43ec-4862-8f08-5fbf67407ec5.png\",\n                \"created_at\": \"2025-01-04T08:23:15.287Z\",\n                \"updated_at\": \"2025-01-25T08:20:32.812Z\"\n            },\n            \"vehicle\": {\n                \"id\": \"677cbb9817a0737c5329f968\",\n                \"plate_number\": \"PH3392\",\n                \"brand\": \"Honda\",\n                \"model\": \"Civic\",\n                \"owner\": \"6778eff38d6d57cdd58075ff\"\n            }\n        },\n        {\n            \"id\": \"679d08c53d0ddc3a0465be6a\",\n            \"vehicleId\": \"677cbb9817a0737c5329f968\",\n            \"userId\": \"6778eff38d6d57cdd58075ff\",\n            \"locationId\": \"678bd59982059b655da1098e\",\n            \"startTime\": \"2025-03-03T09:00:00Z\",\n            \"status\": \"pending\",\n            \"spotNumber\": \"A3\",\n            \"bookingType\": \"on_site\",\n            \"createdAt\": \"2025-01-31T17:30:45.773Z\",\n            \"updatedAt\": \"2025-01-31T17:30:45.773Z\",\n            \"user\": {\n                \"id\": \"6778eff38d6d57cdd58075ff\",\n                \"name\": \"Leo Felcianas\",\n                \"email\": \"dfanso+1@pm.me\",\n                \"password\": \"$2a$10$Mretl982DzzGjTg0qIskLO5YNEKDRyboiickZ6M9bMO93BC.MZ3XW\",\n                \"role\": \"admin\",\n                \"status\": \"active\",\n                \"profile_image_url\": \"https://parkme-assets-bucket-v1.s3.ap-south-1.amazonaws.com/profile-images/my-notion-face-portrait-a1e535fa-43ec-4862-8f08-5fbf67407ec5.png\",\n                \"created_at\": \"2025-01-04T08:23:15.287Z\",\n                \"updated_at\": \"2025-01-25T08:20:32.812Z\"\n            },\n            \"vehicle\": {\n                \"id\": \"677cbb9817a0737c5329f968\",\n                \"plate_number\": \"PH3392\",\n                \"brand\": \"Honda\",\n                \"model\": \"Civic\",\n                \"owner\": \"6778eff38d6d57cdd58075ff\"\n            }\n        },\n        {\n            \"id\": \"679d0cd93d0ddc3a0465be6b\",\n            \"vehicleId\": \"677cbb9817a0737c5329f968\",\n            \"userId\": \"6778eff38d6d57cdd58075ff\",\n            \"locationId\": \"678bd59982059b655da1098e\",\n            \"startTime\": \"2025-03-01T05:30:20.043Z\",\n            \"status\": \"pending\",\n            \"spotNumber\": \"A3\",\n            \"bookingType\": \"on_site\",\n            \"createdAt\": \"2025-01-31T17:48:09.63Z\",\n            \"updatedAt\": \"2025-01-31T17:48:09.63Z\",\n            \"user\": {\n                \"id\": \"6778eff38d6d57cdd58075ff\",\n                \"name\": \"Leo Felcianas\",\n                \"email\": \"dfanso+1@pm.me\",\n                \"password\": \"$2a$10$Mretl982DzzGjTg0qIskLO5YNEKDRyboiickZ6M9bMO93BC.MZ3XW\",\n                \"role\": \"admin\",\n                \"status\": \"active\",\n                \"profile_image_url\": \"https://parkme-assets-bucket-v1.s3.ap-south-1.amazonaws.com/profile-images/my-notion-face-portrait-a1e535fa-43ec-4862-8f08-5fbf67407ec5.png\",\n                \"created_at\": \"2025-01-04T08:23:15.287Z\",\n                \"updated_at\": \"2025-01-25T08:20:32.812Z\"\n            },\n            \"vehicle\": {\n                \"id\": \"677cbb9817a0737c5329f968\",\n                \"plate_number\": \"PH3392\",\n                \"brand\": \"Honda\",\n                \"model\": \"Civic\",\n                \"owner\": \"6778eff38d6d57cdd58075ff\"\n            }\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Vehicle Bookings",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/bookings/vehicle/{{vehicle_id}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"bookings",
+								"vehicle",
+								"{{vehicle_id}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Vehicle Bookings",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/api/bookings/vehicle/{{vehicle_id}}",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"bookings",
+										"vehicle",
+										"{{vehicle_id}}"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 25 Jan 2025 06:55:27 GMT"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Vehicle bookings retrieved successfully\",\n    \"data\": [\n        {\n            \"id\": \"678bddb92118d33569e14ac1\",\n            \"vehicleId\": \"677cbb9817a0737c5329f968\",\n            \"userId\": \"6778eff38d6d57cdd58075ff\",\n            \"locationId\": \"678bd59982059b655da1098e\",\n            \"startTime\": \"2025-01-18T16:58:33.608Z\",\n            \"endTime\": \"2025-01-18T17:54:43.007Z\",\n            \"status\": \"completed\",\n            \"spotNumber\": \"A2\",\n            \"totalAmount\": 100,\n            \"bookingType\": \"on_site\",\n            \"createdAt\": \"2025-01-18T16:58:33.903Z\",\n            \"updatedAt\": \"2025-01-18T17:54:43.307Z\"\n        },\n        {\n            \"id\": \"678bea4ca3df065b202b4a5b\",\n            \"vehicleId\": \"677cbb9817a0737c5329f968\",\n            \"userId\": \"6778eff38d6d57cdd58075ff\",\n            \"locationId\": \"678bd59982059b655da1098e\",\n            \"startTime\": \"2025-01-18T17:52:11.962Z\",\n            \"endTime\": \"2025-01-18T17:54:51.166Z\",\n            \"status\": \"completed\",\n            \"spotNumber\": \"A1\",\n            \"totalAmount\": 100,\n            \"bookingType\": \"on_site\",\n            \"createdAt\": \"2025-01-18T17:52:12.263Z\",\n            \"updatedAt\": \"2025-01-18T17:54:51.459Z\"\n        },\n        {\n            \"id\": \"67948773804e4d5904e76996\",\n            \"vehicleId\": \"677cbb9817a0737c5329f968\",\n            \"userId\": \"6778eff38d6d57cdd58075ff\",\n            \"locationId\": \"678bd59982059b655da1098e\",\n            \"startTime\": \"2025-02-27T10:00:00Z\",\n            \"status\": \"pending\",\n            \"spotNumber\": \"A1\",\n            \"bookingType\": \"on_site\",\n            \"createdAt\": \"2025-01-25T06:40:51.929Z\",\n            \"updatedAt\": \"2025-01-25T06:40:51.929Z\"\n        },\n        {\n            \"id\": \"67948795804e4d5904e76997\",\n            \"vehicleId\": \"677cbb9817a0737c5329f968\",\n            \"userId\": \"6778eff38d6d57cdd58075ff\",\n            \"locationId\": \"678bd59982059b655da1098e\",\n            \"startTime\": \"2025-02-27T10:00:00Z\",\n            \"status\": \"pending\",\n            \"spotNumber\": \"A2\",\n            \"bookingType\": \"on_site\",\n            \"createdAt\": \"2025-01-25T06:41:25.499Z\",\n            \"updatedAt\": \"2025-01-25T06:41:25.499Z\"\n        },\n        {\n            \"id\": \"6794879d804e4d5904e76998\",\n            \"vehicleId\": \"677cbb9817a0737c5329f968\",\n            \"userId\": \"6778eff38d6d57cdd58075ff\",\n            \"locationId\": \"678bd59982059b655da1098e\",\n            \"startTime\": \"2025-02-27T10:00:00Z\",\n            \"status\": \"pending\",\n            \"spotNumber\": \"A3\",\n            \"bookingType\": \"on_site\",\n            \"createdAt\": \"2025-01-25T06:41:33.052Z\",\n            \"updatedAt\": \"2025-01-25T06:41:33.052Z\"\n        },\n        {\n            \"id\": \"679487ff804e4d5904e76999\",\n            \"vehicleId\": \"677cbb9817a0737c5329f968\",\n            \"userId\": \"6778eff38d6d57cdd58075ff\",\n            \"locationId\": \"678bd59982059b655da1098e\",\n            \"startTime\": \"2025-02-27T10:00:00Z\",\n            \"status\": \"pending\",\n            \"spotNumber\": \"A1\",\n            \"bookingType\": \"on_site\",\n            \"createdAt\": \"2025-01-25T06:43:11.147Z\",\n            \"updatedAt\": \"2025-01-25T06:43:11.147Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Cancel Booking",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/bookings/{{booking_id}}/cancel",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"bookings",
+								"{{booking_id}}",
+								"cancel"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Cancel Booking",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/api/bookings/{{booking_id}}/cancel",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"bookings",
+										"{{booking_id}}",
+										"cancel"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 25 Jan 2025 06:50:42 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "37"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"booking is not pending\"\n}"
+						},
+						{
+							"name": "Cancel Booking",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/api/bookings/{{booking_id}}/cancel",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"bookings",
+										"{{booking_id}}",
+										"cancel"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 25 Jan 2025 06:51:05 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Parking Locations",
+			"item": [
+				{
+					"name": "Create Parking Location",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Downtown Parking\",\n    \"address\": \"123 Main Street\",\n    \"slots\": [\n        {\n            \"number\": \"A1\",\n            \"is_occupied\": false,\n            \"type\": \"standard\"\n        },\n        {\n            \"number\": \"A2\",\n            \"is_occupied\": false,\n            \"type\": \"handicap\"\n        },\n        {\n            \"number\": \"A3\",\n            \"is_occupied\": false,\n            \"type\": \"electric\"\n        }\n    ]\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/api/locations",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"locations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Locations",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/locations",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"locations"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get All Locations",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/api/locations",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"locations"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 31 Jan 2025 17:04:19 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "355"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"678bd59982059b655da1098e\",\n        \"name\": \"Downtown Parking\",\n        \"address\": \"123 Main Street\",\n        \"slots\": [\n            {\n                \"number\": \"A1\",\n                \"is_occupied\": true,\n                \"type\": \"standard\"\n            },\n            {\n                \"number\": \"A2\",\n                \"is_occupied\": true,\n                \"type\": \"handicap\"\n            },\n            {\n                \"number\": \"A3\",\n                \"is_occupied\": true,\n                \"type\": \"electric\"\n            }\n        ],\n        \"total_slots\": 3,\n        \"created_at\": \"2025-01-18T16:23:53.787Z\",\n        \"updated_at\": \"2025-01-18T16:23:53.787Z\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get Location by ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/locations/{{location_id}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"locations",
+								"{{location_id}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Location",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Updated Downtown Parking\",\n    \"address\": \"123 Main Street\",\n    \"slots\": [\n        {\n            \"number\": \"A1\",\n            \"is_occupied\": false,\n            \"type\": \"standard\"\n        },\n        {\n            \"number\": \"A2\",\n            \"is_occupied\": true,\n            \"type\": \"handicap\"\n        },\n        {\n            \"number\": \"A3\",\n            \"is_occupied\": false,\n            \"type\": \"electric\"\n        }\n    ]\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/api/locations/{{location_id}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"locations",
+								"{{location_id}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Slot Status",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"slot_number\": \"A1\",\n    \"is_occupied\": true\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/api/locations/{{location_id}}/slot",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"locations",
+								"{{location_id}}",
+								"slot"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Location",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/locations/{{location_id}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"locations",
+								"{{location_id}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Arduino",
+			"item": [
+				{
+					"name": "Gate Entry",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-API-Key",
+								"value": "{{arduino_api_key}}"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/path/to/numberplate.jpg"
+								},
+								{
+									"key": "location_id",
+									"value": "{{location_id}}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/arduino/gate/enter/upload",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"arduino",
+								"gate",
+								"enter",
+								"upload"
+							]
+						},
+						"description": "Upload number plate image and create on-site booking with automatic slot assignment"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Spot Status",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-API-Key",
+								"value": "{{arduino_api_key}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"location_id\": \"678bd59982059b655da1098e\",\n    \"spot_number\": \"A1\",\n    \"is_occupied\": false\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/api/arduino/spot/status",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"arduino",
+								"spot",
+								"status"
+							]
+						},
+						"description": "Update parking spot status from Arduino sensors"
+					},
+					"response": []
+				},
+				{
+					"name": "Gate Exit",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-API-Key",
+								"value": "{{arduino_api_key}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/path/to/numberplate.jpg"
+								},
+								{
+									"key": "location_id",
+									"value": "{{location_id}}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/arduino/gate/exit/upload",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"arduino",
+								"gate",
+								"exit",
+								"upload"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Bookings",
+			"item": [
+				{
+					"name": "Create Pre-booked Booking",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"vehicleId\": \"{{vehicle_id}}\",\n    \"userId\": \"{{user_id}}\",\n    \"locationId\": \"{{location_id}}\",\n    \"startTime\": \"2024-02-20T10:00:00Z\",\n    \"endTime\": \"2024-02-20T12:00:00Z\",\n    \"spotNumber\": \"A1\",\n    \"bookingType\": \"pre_booked\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/api/bookings",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"bookings"
+							]
+						},
+						"description": "Create a pre-booked parking reservation"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Booking by ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/bookings/{{booking_id}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"bookings",
+								"{{booking_id}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Vehicle Bookings",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/bookings/vehicle/{{vehicle_id}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"bookings",
+								"vehicle",
+								"{{vehicle_id}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cancel Booking",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/bookings/{{booking_id}}/cancel",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"bookings",
+								"{{booking_id}}",
+								"cancel"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User Stats",
+			"item": [
+				{
+					"name": "Get User Stats",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{auth_token}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/user/stats",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"stats"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Health",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/health",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"health"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "",
+			"type": "default"
+		},
+		{
+			"key": "user_id",
+			"value": "",
+			"type": "default"
+		},
+		{
+			"key": "jwt_token",
+			"value": "",
+			"type": "default"
+		},
+		{
+			"key": "vehicle_id",
+			"value": "",
+			"type": "default"
+		}
+	]
+}
